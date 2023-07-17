@@ -1,0 +1,50 @@
+----- Fast Exponentiation--------------------------------------------------------------
+
+// a power of b
+
+if a is even
+(a power of b/2)power of 2
+
+if a is odd
+(a power of b/2)power of 2 * a
+
+
+------check odd number form code------------------------------------------
+
+let x =  25;
+
+for(let i=1;i<x;i++)
+{
+    if(i&1)
+    {
+        console.log('odd' + i);
+    }
+}
+
+----usage of >> & << ---------------------------------------------
+
+let x =  25;
+
+let halfx = x>>1;
+console.log(halfx); //12
+
+let halfx = x<<1;
+console.log(halfx); //50
+
+----------------------------------------------
+Segmented seive - Given a number n, print all primes smaller than n called Segmented seive
+-----------------------------------------------------
+
+pigeonhole principle  - If M items and N containers, There is atleaset 1 container with [m/n] items
+for example  x = 10/4 = 3 Items
+
+------------------------------------------------------------
+calatlon number -- Catalan numbers are defined as a mathematical sequence that consists of positive integers, 
+                which can be used to find the number of possibilities of various combinations. 
+                 Example has been attached --> Practice > BasicMaths >
+
+---------------------------------------------------------------
+
+Inclusion Exclusion principle - In the field of Combinatorics, it is a counting method used to compute the cardinality of the union set
+
+--------------------------------------------------

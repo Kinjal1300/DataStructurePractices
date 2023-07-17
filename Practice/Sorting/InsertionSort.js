@@ -1,6 +1,5 @@
 // Insertion Sort 
-
-const arr = [44,5,7,8,9,4,29];
+const arr = [44,55,10,9,7,4,29];
 let n = arr.length;
 
 for(let i=1;i<=n;i++)
@@ -20,7 +19,8 @@ for(let i=1;i<=n;i++)
         
     }
     console.log(j + " temp --"+temp);
-    arr[j+1] =temp;
+    if(temp) { arr[j+1] =temp}
+   ;
 }
 
 
