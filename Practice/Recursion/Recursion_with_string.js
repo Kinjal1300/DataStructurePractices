@@ -24,3 +24,22 @@ function reverse(str){
 }
 
 console.log(reverse('Test'))
+
+
+// ----------------------------------------
+
+let a = "abaff";
+
+function checkPalindrom(a,s,e)
+{   
+    if(s>e){ return true; } 
+    if(a[s] !== a[e])
+    {
+        return false;
+    }
+    else
+    {
+           return checkPalindrom(a,s+1,e-1);
+    }
+}
+console.log(checkPalindrom(a,0,a.length-1))
