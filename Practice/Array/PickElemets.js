@@ -43,3 +43,51 @@ console.log(printArray(arr, n,d));
 
 
 // -------------------------------------------------------------------------------------
+// Input: arr[] = { 10, 5, 2, 7, 1, 9 }, k = 15
+// Output: 4
+// Explanation: The sub-array is {5, 2, 7, 1}.
+// -------------------------
+// JS code for the above approach
+ 
+// function to find the length of longest
+// subarray having sum k
+function lenOfLongSubarr(arr, N,  K)
+{
+ 
+    // Variable to store the answer
+    let maxlength = 0;
+ 
+    for (let i = 0; i < N; i++) {
+ 
+        // Variable to store sum of subarrays
+        let Sum = 0;
+ 
+        for (let j = i; j < N; j++) {
+            
+                
+ 
+            // Storing sum of subarrays
+            Sum += arr[j];
+ 
+            // if Sum equals K
+            if (Sum == K) {
+                
+ 
+                // Update maxLength
+                maxlength = Math.max(maxlength, j - i + 1);
+            }
+        }
+    }
+ 
+    // Return the maximum length
+    return maxlength;
+}
+ 
+// Driver Code
+// Given input
+let arr = [ 10, 5, 2, 7, 1, 9, 1,2,1,2 ];
+let n = arr.length;
+let k = 15;
+ 
+// Function Call
+console.log( "Length = " , lenOfLongSubarr(arr, n, k));
