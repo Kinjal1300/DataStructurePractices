@@ -1,0 +1,11 @@
+
+let mini=  prices[0];
+let maxP =0;
+let n = prices.length;
+for(let i=0;i<n;i++)
+{
+   let cost = prices[i] - mini;
+   maxP = Math.max(maxP,cost);
+mini = Math.min(mini, prices[i]);
+}
+return maxP;
