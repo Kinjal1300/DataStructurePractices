@@ -1,0 +1,41 @@
+--------------PREORDER-------------------
+
+
+void preOrder(node)
+{
+  if(node === null)
+  {
+  return;
+  }
+  print(node->data)
+  preOrder(node->left)
+  preOrder(node->right)
+}
+
+-------------------INORDER--------------------------
+
+void inOrder(node)
+{
+  if(node === null)
+  {
+  return;
+  }
+    inOrder(node->left)
+  print(node->data)
+  inOrder(node->right)
+}
+
+
+-------------------POSTORDER--------------------------
+
+void postOrder(node)
+{
+  if(node === null)
+  {
+  return;
+  }
+    postOrder(node->left)
+  postOrder(node->right)
+   print(node->data)
+}
+
