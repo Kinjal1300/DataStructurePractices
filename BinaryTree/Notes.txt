@@ -25,7 +25,6 @@ void inOrder(node)
   inOrder(node->right)
 }
 
-
 -------------------POSTORDER--------------------------
 
 void postOrder(node)
